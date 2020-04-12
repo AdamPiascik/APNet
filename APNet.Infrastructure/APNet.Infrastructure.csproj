@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\APNet.Core\APNet.Core.csproj" />
+    <ProjectReference Include="..\APNet.Protocols\APNet.Protocols.csproj" />
+  </ItemGroup>
+
+</Project>
