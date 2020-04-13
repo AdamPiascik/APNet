@@ -1,15 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APNet.Core", "APNet.Core\APNet.Core.csproj", "{90EC3DDD-A0B9-44BE-A14F-29A93890D873}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APNet.Core", "APNet.Core\APNet.Core.csproj", "{90EC3DDD-A0B9-44BE-A14F-29A93890D873}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APNet.Main", "APNet.Main\APNet.Main.csproj", "{B3A06155-C039-474F-BD4C-9ED2C8A5A8FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APNet.Main", "APNet.Main\APNet.Main.csproj", "{B3A06155-C039-474F-BD4C-9ED2C8A5A8FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APNet.Infrastructure", "APNet.Infrastructure\APNet.Infrastructure.csproj", "{08FD0A16-B376-4F8F-ABD0-84BEFC8E1564}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APNet.Infrastructure", "APNet.Infrastructure\APNet.Infrastructure.csproj", "{08FD0A16-B376-4F8F-ABD0-84BEFC8E1564}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APNet.Protocols", "APNet.Protocols\APNet.Protocols.csproj", "{385C643E-6548-4E24-80BB-3F50D3EC5380}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APNet.Protocols", "APNet.Protocols\APNet.Protocols.csproj", "{385C643E-6548-4E24-80BB-3F50D3EC5380}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7027BC69-606D-4D71-AFEE-7BB68DD84899}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,9 +24,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{90EC3DDD-A0B9-44BE-A14F-29A93890D873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -72,5 +74,11 @@ Global
 		{385C643E-6548-4E24-80BB-3F50D3EC5380}.Release|x64.Build.0 = Release|Any CPU
 		{385C643E-6548-4E24-80BB-3F50D3EC5380}.Release|x86.ActiveCfg = Release|Any CPU
 		{385C643E-6548-4E24-80BB-3F50D3EC5380}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {422E4AE4-0D5F-4ABD-9C2D-8DAF335F6653}
 	EndGlobalSection
 EndGlobal

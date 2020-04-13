@@ -19,12 +19,23 @@ namespace APNet.Core.ErrorHandling
             Severity = severity;
         }
 
+        public static Error FileNotFoundError(
+            string file)
+        {
+            return
+                new Error(
+                    ErrorType.ItemNotFoundError,
+                    ErrorSeverity.Fatal,
+                    ErrorMessages.FileNotFoundError(file)
+                );
+        }
+
         public static Error DirectoryNotFoundError(
             string directory)
         {
             return
                 new Error(
-                    ErrorType.DirectoryNotFoundError,
+                    ErrorType.ItemNotFoundError,
                     ErrorSeverity.Fatal,
                     ErrorMessages.DirectoryNotFoundError(directory)
                 );
@@ -83,6 +94,18 @@ namespace APNet.Core.ErrorHandling
                     ErrorType.DeviceListError,
                     ErrorSeverity.Fatal,
                     ErrorMessages.NoDevicesError
+                );
+        }
+
+        public static Error InvalidArgumentError(
+            string commandName,
+            string argument)
+        {
+            return
+                new Error(
+                    ErrorType.InvalidArgumentError,
+                    ErrorSeverity.Fatal,
+                    ErrorMessages.InvalidArgumentError(commandName, argument)
                 );
         }
     }

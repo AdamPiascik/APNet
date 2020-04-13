@@ -4,4 +4,20 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Config\DeviceDefinitions.json" />
+    <None Remove="Config\NetworkMap.txt" />
+    <None Remove="Config\ValidCommands.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Config\DeviceDefinitions.json" />
+    <EmbeddedResource Include="Config\NetworkMap.txt" />
+    <EmbeddedResource Include="Config\ValidCommands.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
 </Project>

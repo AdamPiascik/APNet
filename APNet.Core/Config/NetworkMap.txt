@@ -1,0 +1,48 @@
+﻿[
+  {
+    "Name": "quit",
+    "MinimumNumberOfArguments": 0,
+    "MaximumNumberOfArguments": 0,
+    "ValidArguments": [],
+    "Documentation": ""
+  },
+  {
+    "Name": "help",
+    "MinimumNumberOfArguments": 0,
+    "MaximumNumberOfArguments": 0,
+    "ValidArguments": [
+      {
+        "FullName": "CommandName",
+        "Alias": "c",
+        "Position": 1
+      }
+    ],
+    "Documentation": ""
+  },
+  {
+    "Name": "list",
+    "MinimumNumberOfArguments": 0,
+    "MaximumNumberOfArguments": 0,
+    "ValidArguments": [
+      {
+        "FullName": "CommandName",
+        "Alias": "c",
+        "Position": 1
+      }
+    ],
+    "Documentation": ""
+  },
+  {
+    "Name": "send",
+    "MinimumNumberOfArguments": 0,
+    "MaximumNumberOfArguments": 0,
+    "ValidArguments": [
+      {
+        "FullName": "CommandName",
+        "Alias": "c",
+        "Position": 1
+      }
+    ],
+    "Documentation": ""
+  }
+]

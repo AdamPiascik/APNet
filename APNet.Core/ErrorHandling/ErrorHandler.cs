@@ -8,6 +8,7 @@ namespace APNet.Core.ErrorHandling
         private const ConsoleColor fatalColor = ConsoleColor.Red;
         private const ConsoleColor warningColor = ConsoleColor.Yellow;
         private const ConsoleColor infoColor = ConsoleColor.White;
+        private const ConsoleColor replErrorColor = ConsoleColor.Red;
 
         public static void HandleErrors(
             List<Error> errors)
@@ -36,6 +37,25 @@ namespace APNet.Core.ErrorHandling
 
                 Environment.Exit(1);
             }
+        }
+
+        public static void HandleReplError(
+            Error error)
+        {
+            Console.ForegroundColor =
+                error.Severity switch
+                {
+                    ErrorSeverity.Fatal => fatalColor,
+                    ErrorSeverity.Warning => warningColor,
+                    ErrorSeverity.Information => infoColor,
+                    _ => fatalColor,
+                };
+
+            Console.Write(
+                $"\n{error.Type} error: {error.Message}\n"
+            );
+
+            Console.ForegroundColor = ConsoleColor.White;
         }
 
         private static void HandleError(

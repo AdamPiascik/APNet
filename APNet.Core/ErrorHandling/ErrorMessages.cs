@@ -2,8 +2,14 @@
 {
     public static class ErrorMessages
     {
+        public static string FileNotFoundError(string file) =>
+            $"Could not find the requested file:{file}";
+
         public static string DirectoryNotFoundError(string directory) =>
             $"Could not find the requested directory:{directory}";
+
+        public static string InvalidArgumentError(string commandName, string argument) =>
+            $"{argument} is not a valid argument for {commandName}";
 
         public static string NetworkMapFileParseError(int lineNumber) =>
             $"There was an error parsing line {lineNumber} of the network map file. Please refer to README.md for the expected syntax";

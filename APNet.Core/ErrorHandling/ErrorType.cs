@@ -3,7 +3,8 @@
     public enum ErrorType
     {
         GeneralException,
-        DirectoryNotFoundError,
+        ItemNotFoundError,
+        InvalidArgumentError,
         NetworkMapError,
         DeviceListError
     }
